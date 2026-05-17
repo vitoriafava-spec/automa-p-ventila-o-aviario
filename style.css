@@ -1,0 +1,44 @@
+body {
+  font-family: Arial;
+  background: #0f172a;
+  color: white;
+  text-align: center;
+}
+
+.container {
+  max-width: 400px;
+  margin: auto;
+}
+
+.card {
+  background: #1e293b;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 12px;
+}
+
+button {
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.rele {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.ON {
+  color: #22c55e;
+}
+
+.OFF {
+  color: #ef4444;
+}
