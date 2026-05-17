@@ -21,8 +21,8 @@ function setModo(modo) {
 }
 
 
-//function simularTemperatura() {
-  //estado.temperatura += (Math.random() * 2 - 1);
+function simularTemperatura() {
+  estado.temperatura += (Math.random() * 2 - 1);
 
   
   if (estado.modo === "auto") {
