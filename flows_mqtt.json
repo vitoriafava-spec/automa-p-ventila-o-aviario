@@ -1,0 +1,415 @@
+[
+    {
+        "id": "0c739004bdc7b849",
+        "type": "tab",
+        "label": "Fluxo 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "57af33258da97b95",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "ef08ae89108c4b3c",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "1ea9dd810ff53618",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1ea9dd810ff53618",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "85908355df94c1ca",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "b163ec3819009f7d",
+        "type": "mqtt in",
+        "z": "0c739004bdc7b849",
+        "name": "",
+        "topic": "#",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "57af33258da97b95",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 310,
+        "y": 180,
+        "wires": [
+            [
+                "f971aa3707eaaac4"
+            ]
+        ]
+    },
+    {
+        "id": "f971aa3707eaaac4",
+        "type": "debug",
+        "z": "0c739004bdc7b849",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 460,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "5e0a3c1761d613ce",
+        "type": "mqtt in",
+        "z": "0c739004bdc7b849",
+        "name": "",
+        "topic": "granja/galpao1/#",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "57af33258da97b95",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 340,
+        "y": 240,
+        "wires": [
+            [
+                "37a011603d6d8724"
+            ]
+        ]
+    },
+    {
+        "id": "37a011603d6d8724",
+        "type": "debug",
+        "z": "0c739004bdc7b849",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "0d23b8b4fae8fd38",
+        "type": "mqtt in",
+        "z": "0c739004bdc7b849",
+        "name": "",
+        "topic": "granja/galpao1/sensores/temperatura",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "57af33258da97b95",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 470,
+        "y": 460,
+        "wires": [
+            [
+                "c7f61b828e3d5259"
+            ]
+        ]
+    },
+    {
+        "id": "c7f61b828e3d5259",
+        "type": "ui_gauge",
+        "z": "0c739004bdc7b849",
+        "name": "",
+        "group": "ef08ae89108c4b3c",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temperatura",
+        "label": "ºC",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "50",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 770,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "db23e4e3b93c63f1",
+        "type": "mqtt in",
+        "z": "0c739004bdc7b849",
+        "name": "",
+        "topic": "granja/galpao1/reles/rele1",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "57af33258da97b95",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 470,
+        "y": 520,
+        "wires": [
+            [
+                "4543979d3caf2e71"
+            ]
+        ]
+    },
+    {
+        "id": "faff75e66f3321d6",
+        "type": "mqtt in",
+        "z": "0c739004bdc7b849",
+        "name": "",
+        "topic": "granja/galpao1/reles/rele2",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "57af33258da97b95",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 470,
+        "y": 580,
+        "wires": [
+            [
+                "6b82bccd6fb0fd47"
+            ]
+        ]
+    },
+    {
+        "id": "577a53833a0f3f4e",
+        "type": "mqtt in",
+        "z": "0c739004bdc7b849",
+        "name": "",
+        "topic": "granja/galpao1/reles/rele3",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "57af33258da97b95",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 470,
+        "y": 640,
+        "wires": [
+            [
+                "58bb373328690575"
+            ]
+        ]
+    },
+    {
+        "id": "4543979d3caf2e71",
+        "type": "ui_text",
+        "z": "0c739004bdc7b849",
+        "group": "ef08ae89108c4b3c",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Ventilador 1",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 770,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "6b82bccd6fb0fd47",
+        "type": "ui_text",
+        "z": "0c739004bdc7b849",
+        "group": "ef08ae89108c4b3c",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Ventilador 2",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 770,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "58bb373328690575",
+        "type": "ui_text",
+        "z": "0c739004bdc7b849",
+        "group": "ef08ae89108c4b3c",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Ventilador 3",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 770,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "3d4253edcab5bf6c",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-dashboard": "3.6.6"
+        }
+    }
+]
