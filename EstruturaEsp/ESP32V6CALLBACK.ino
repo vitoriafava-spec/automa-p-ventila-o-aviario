@@ -4,15 +4,15 @@
 #include <esp_task_wdt.h>
 #include <ArduinoOTA.h>
 
-float TEMP_LIGAR_1 = 22.0;
-float TEMP_LIGAR_2 = 24.0;
-float TEMP_LIGAR_3 = 26.0;
+float TEMP_LIGAR_1 = 16.0;
+float TEMP_LIGAR_2 = 17.0;
+float TEMP_LIGAR_3 = 18.0;
 
 float HISTERESIS = 1.5;
 unsigned long TEMPO_MINIMO = 30000;
 
 #define DHTPIN 4
-#define DHTTYPE DHT22
+#define DHTTYPE DHT11
 
 #define RELE1 18
 #define RELE2 19
