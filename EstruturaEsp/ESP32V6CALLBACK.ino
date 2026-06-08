@@ -25,8 +25,8 @@ unsigned long TEMPO_MINIMO = 30000;
 const char* ssid = "Jaringangay";
 const char* password = "cartas259";
 
-const char* mqtt_server = "192.168.3.38";
-const int mqtt_port = 1883;
+const char* mqtt_server = "200.18.75.25";
+const int mqtt_port = 8025;
 
 WiFiClient espClient;
 PubSubClient mqtt(espClient);
